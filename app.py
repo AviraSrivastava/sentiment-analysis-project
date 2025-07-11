@@ -10,10 +10,6 @@ model = joblib.load("sentiment_model.pkl")
 # Setup page config
 st.set_page_config(page_title="🎬 Movie Sentiment App", layout="centered")
 
-# Initialize session state
-if "history" not in st.session_state:
-    st.session_state.history = []
-
 # Title & Description
 st.markdown("<h1 style='text-align: center;'>🎥 Movie Review Analyzer</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; font-size: 18px;'>Instantly predict the sentiment of your movie reviews!</p>", unsafe_allow_html=True)
@@ -46,25 +42,3 @@ if st.button("🔍 Predict Sentiment"):
 
 # Divider
 st.divider()
-
-# # Prediction History (inside expander)
-# with st.expander("📜 View Prediction History"):
-#     if st.session_state.history:
-#         hist_df = pd.DataFrame(st.session_state.history)
-#         st.dataframe(hist_df, use_container_width=True)
-
-#         # Pie Chart using Plotly
-#         st.subheader("📊 Sentiment Distribution")
-#         pie = px.pie(hist_df, names="Prediction", title="Summary of Sentiments", color_discrete_sequence=px.colors.qualitative.Set2)
-#         st.plotly_chart(pie, use_container_width=True)
-
-#         # Download / Clear
-#         col1, col2 = st.columns(2)
-#         with col1:
-#             st.download_button("📥 Download CSV", hist_df.to_csv(index=False), "prediction_history.csv", "text/csv")
-#         with col2:
-#             if st.button("🧹 Clear History"):
-#                 st.session_state.history.clear()
-#                 st.experimental_rerun()
-#     else:
-#         st.info("No predictions yet.")
