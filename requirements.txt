@@ -1,5 +1,6 @@
 pip>=24.0
 
+# Core dependencies
 streamlit>=1.35.0
 scikit-learn
 pandas
@@ -8,3 +9,6 @@ matplotlib
 seaborn
 nltk
 joblib
+
+# Optional: Prevent markdown conflict
+markdown-it-py==2.2.0
