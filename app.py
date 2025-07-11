@@ -67,6 +67,6 @@ with st.expander("📜 View Prediction History"):
         with col2:
             if st.button("🧹 Clear History"):
                 st.session_state.history.clear()
-                st.experimental_rerun()
+                st.rerun()
     else:
         st.info("No predictions yet.")
