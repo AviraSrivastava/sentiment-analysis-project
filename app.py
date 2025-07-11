@@ -10,6 +10,12 @@ model = joblib.load("sentiment_model.pkl")
 # Setup page config
 st.set_page_config(page_title="🎬 Movie Sentiment App", layout="centered")
 
+
+# # Initialize session state
+# if "history" not in st.session_state:
+#     st.session_state.history = []
+
+
 # Title & Description
 st.markdown("<h1 style='text-align: center;'>🎥 Movie Review Analyzer</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; font-size: 18px;'>Instantly predict the sentiment of your movie reviews!</p>", unsafe_allow_html=True)
