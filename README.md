@@ -35,6 +35,6 @@ movie-sentiment-app/
 └── README.md             # You're here!
 
 ## 🚀 DEMO
-<img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/611204a6-42a4-465c-b4aa-77df65d3d340" />
+<img width="1860" height="878" alt="Screenshot" src="https://github.com/user-attachments/assets/611204a6-42a4-465c-b4aa-77df65d3d340" />
 
-<img width="1920" height="1080" alt="Screenshot1" src="https://github.com/user-attachments/assets/f482e05d-b7d7-4409-a5f8-d2b53dbad7ac" />
+<img width="1860" height="878" alt="Screenshot1" src="https://github.com/user-attachments/assets/f482e05d-b7d7-4409-a5f8-d2b53dbad7ac" />
